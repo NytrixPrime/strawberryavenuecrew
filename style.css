@@ -1,0 +1,163 @@
+/* ---------- STILE GENERALE ---------- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+body {
+  background: radial-gradient(circle at top, #ff6a3d 0, #150606 45%, #040307 100%);
+  color: #f5f5f5;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px 16px 60px;
+}
+
+/* ---------- LOGO + HEADER ---------- */
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header img.logo {
+  max-width: 260px;
+  height: auto;
+  filter: drop-shadow(0 0 15px rgba(0,0,0,0.8));
+}
+
+header h1 {
+  margin-top: 10px;
+  font-size: 1.4rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #ffd3bd;
+}
+
+/* ---------- NAVBAR ---------- */
+
+nav {
+  margin-top: 18px;
+  border-top: 2px solid #ed2b2a;
+  border-bottom: 2px solid #ed2b2a;
+  background: rgba(0, 0, 0, 0.85);
+  box-shadow: 0 0 14px rgba(237, 43, 42, 0.4);
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  gap: 34px;
+  padding: 12px 8px;
+  flex-wrap: wrap;
+}
+
+.nav-links a {
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #f5f5f5;
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  color: #ff6a3d;
+}
+
+/* ---------- SEZIONI ---------- */
+
+section {
+  margin-top: 40px;
+  padding: 24px 18px 32px;
+  background: rgba(10, 10, 16, 0.88);
+  border-radius: 16px;
+  border: 1px solid rgba(237, 43, 42, 0.35);
+  box-shadow: 0 0 20px rgba(0,0,0,0.7);
+}
+
+section h2 {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  margin-bottom: 12px;
+  color: #ffd3bd;
+  border-left: 4px solid #ed2b2a;
+  padding-left: 10px;
+}
+
+.section-subtitle {
+  font-size: 0.9rem;
+  margin-bottom: 12px;
+  color: #d1d1d1;
+  font-style: italic;
+}
+
+/* ---------- BANNER UNISCITI A NOI ---------- */
+
+.join-banner-wrapper {
+  margin-top: 28px;
+  display: flex;
+  justify-content: center;
+}
+
+.join-banner {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 28px;
+  border-radius: 999px;
+  background: #ed2b2a;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  animation: pulse 1.4s infinite;
+  position: relative;
+  overflow: hidden;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.join-banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    120deg,
+    rgba(255,255,255,0.15),
+    rgba(255,255,255,255,0),
+    rgba(255,255,255,0.15)
+  );
+  transform: translateX(-120%);
+  animation: shine 2.5s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); box-shadow: 0 0 8px rgba(237,43,42,0.9); }
+  50% { transform: scale(1.03); box-shadow: 0 0 18px rgba(237,43,42,1); }
+  100% { transform: scale(1); box-shadow: 0 0 8px rgba(237,43,42,0.9); }
+}
+
+@keyframes shine {
+  0% { transform: translateX(-120%); }
+  50% { transform: translateX(120%); }
+  100% { transform: translateX(120%); }
+}
+
+/* ---------- FOOTER ---------- */
+
+footer {
+  margin-top: 40px;
+  padding: 18px 0;
+  text-align: center;
+  font-size: 0.8rem;
+  color: #b1b1b1;
+  border-top: 1px solid rgba(255,255,255,0.12);
+}

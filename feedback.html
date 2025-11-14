@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <title>S.A.C – Feedback</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="container">
+
+    <header>
+      <img src="logo.png" class="logo" alt="SAC Logo" />
+      <h1>Strawberry Avenue Crew</h1>
+    </header>
+
+    <nav>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="storia.html">Storia</a>
+        <a href="membri.html">Membri</a>
+        <a href="feedback.html">Feedback</a>
+      </div>
+    </nav>
+
+    <section>
+      <h2>Lascia un Feedback</h2>
+      <p class="section-subtitle">
+        Aiutaci a migliorare il server e il bot con un tuo parere.
+      </p>
+
+      <form onsubmit="sendFeedback(event)" class="feedback-form">
+
+        <label>Nome (anche nickname):</label>
+        <input type="text" id="name" placeholder="Il tuo nome">
+
+        <label>Valutazione:</label>
+        <select id="rating">
+          <option value="⭐">⭐</option>
+          <option value="⭐⭐">⭐⭐</option>
+          <option value="⭐⭐⭐">⭐⭐⭐</option>
+          <option value="⭐⭐⭐⭐">⭐⭐⭐⭐</option>
+          <option value="⭐⭐⭐⭐⭐">⭐⭐⭐⭐⭐</option>
+        </select>
+
+        <label>Commento (opzionale):</label>
+        <textarea id="message" rows="5" placeholder="Il tuo messaggio"></textarea>
+
+        <button type="submit" class="submit-btn">Invia Feedback</button>
+      </form>
+
+      <div class="join-banner-wrapper">
+        <a class="join-banner" href="https://discord.gg/kyZMHmXWkZ" target="_blank">UNISCITI A NOI</a>
+      </div>
+    </section>
+
+    <footer>
+      © 2025 Strawberry Avenue Crew
+    </footer>
+  </div>
+
+  <script src="feedback.js"></script>
+</body>
+</html>
